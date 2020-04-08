@@ -293,6 +293,7 @@
 					"DEBUG=1",
 					PJ_AUTOCONF,
 				);
+				"GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS[arch=*]" = "PJ_AUTOCONF=1";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"\"$(SRCROOT)/VialerPJSIP/Headers\"",
@@ -318,6 +319,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = PJ_AUTOCONF;
+				"GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS[arch=*]" = "PJ_AUTOCONF=1";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"\"$(SRCROOT)/VialerPJSIP/Headers\"",
