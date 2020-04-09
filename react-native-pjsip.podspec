@@ -18,3 +18,11 @@ Pod::Spec.new do |s|
   s.dependency 'React'
   s.vendored_frameworks = 'ios/VialerPJSIP.framework'
 end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)', 'PJ_AUTOCONF=1']
+    end
+  end
+end
